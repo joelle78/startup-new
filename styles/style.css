@@ -1,0 +1,191 @@
+:root {
+    --white: #fff;
+    --blood-orange: #f7511d;
+    --beige: #f7eee3;
+}
+
+/* 1. Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+main > nav {
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+}
+
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+    color: var(--blood-orange);
+    font-weight: 500;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+    padding-left: 0;
+    border-left: 1px solid #efefef;
+}
+
+.section-nav a {
+    text-decoration: none;
+    display: block;
+    padding: .125rem 0;
+    color: #ccc;
+    transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+    color: var(--blood-orange);
+}
+
+/** Poor man's reset **/
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    background: #fff;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+ul, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin-left: 1rem;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 4em;
+}
+
+/** page layout **/
+main {
+    display: grid;
+    grid-template-columns: 1fr 15em;
+    max-width: 100em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+section {
+    padding-top: 13rem;
+    padding-bottom: 20rem;
+}
+
+#senior-designer span {
+    color: var(--blood-orange);
+    font-weight: bold;
+}
+
+/* SECTION 1 WHO IS VERVE */
+.flex-wrapper-intro{
+    width: 600px;
+}
+
+.flex-wrapper-intro span {
+    font-weight: bold;
+}
+
+/* SECTION 2 JOB DESCRIPTION */
+.flex-wrapper-job-description {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.flex-wrapper-job-description img {
+    width: 350px;
+    height: 550px;
+    margin-top: 1.7em;
+    opacity: 70%;
+    /*border-radius: 0 15px 20px 0;*/
+    border-left: 2px solid var(--blood-orange);
+
+}
+
+
+.flex-wrapper-job-description p {
+    width: 600px;
+    font-size: 1.5em;
+    margin-left: 5em;
+
+}
+
+
+
+
+
+/* SECTION 3 REQUIREMENTS */
+.flex-wrapper-important li span {
+    color: black;
+}
+
+.flex-wrapper-important li {
+    font-size: 1em;
+    margin: 10px;
+    width: 330px;
+    list-style: disc;
+    color: var(--blood-orange);
+}
+
+/* SECTION 3 PERKS AT VERVE*/
+.flex-wrapper-perks{
+    width: 600px;
+}
+
+/* SECTION 4 APPLY NOW */
+.flex-wrapper-apply {
+    width: 600px;
+}
+
+/* SLIDE IN ANIMATIONS */
+/* BOVEN NAAR ONDER*/
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* RECHTS NAAR LINKS */
+.reveal2{
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal2.active{
+    transform: translateX(0);
+    opacity: 1;
+}
+
+/* LINKS NAAR RECHTS */
+.reveal3{
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+.reveal3.active{
+    transform: translateX(0);
+    opacity: 1;
+}
