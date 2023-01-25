@@ -105,6 +105,9 @@ section {
 .flex-wrapper-job-description {
     display: flex;
     flex-direction: row;
+    background-color: #efefef;
+    border-radius: 50%;
+    width: 620px;
 
 }
 
@@ -122,7 +125,7 @@ section {
 .flex-wrapper-job-description p {
     width: 600px;
     font-size: 1.5em;
-    margin-left: 5em;
+    margin-left: 15em;
 
 }
 
