@@ -2,21 +2,23 @@
     --white: #fff;
     --blood-orange: #f7511d;
     --beige: #f7eee3;
+    --grey: #efefef;
 }
 
-/* 1. Enable smooth scrolling */
+
+/* Enable smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* 2. Make nav sticky */
+/* Make nav sticky */
 main > nav {
     position: sticky;
     top: 2rem;
     align-self: start;
 }
 
-/* 3. ScrollSpy active styles (see JS tab for activation) */
+/* ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
     color: var(--blood-orange);
     font-weight: 500;
@@ -25,7 +27,7 @@ main > nav {
 /* Sidebar Navigation */
 .section-nav {
     padding-left: 0;
-    border-left: 1px solid #efefef;
+    border-left: 1px solid var(--grey);
 }
 
 .section-nav a {
@@ -47,7 +49,7 @@ main > nav {
 }
 
 html, body {
-    background: #fff;
+    background: var(--white);
 }
 
 body {
@@ -59,6 +61,12 @@ ul, ol {
     margin: 0;
     padding: 0;
 }
+
+section {
+    padding-top: 5rem;
+    padding-bottom: 18rem;
+}
+
 li {
     margin-left: 1rem;
 }
@@ -81,24 +89,23 @@ main {
     margin: 0 auto;
 }
 
-/** enlarge the sections for this demo, so that we have a long scrollable page **/
-section {
-    padding-top: 13rem;
-    padding-bottom: 20rem;
-}
-
+/* TITLE */
 #senior-designer span {
     color: var(--blood-orange);
     font-weight: bold;
 }
 
 /* SECTION 1 WHO IS VERVE */
-.flex-wrapper-intro{
-    width: 600px;
+.flex-wrapper-intro {
+    width: 700px;
 }
 
 .flex-wrapper-intro span {
     font-weight: bold;
+}
+
+.flex-wrapper-intro p {
+    font-size: 1.5em;
 }
 
 /* SECTION 2 JOB DESCRIPTION */
@@ -108,19 +115,7 @@ section {
     background-color: #efefef;
     border-radius: 50%;
     width: 620px;
-
 }
-
-.flex-wrapper-job-description img {
-    width: 350px;
-    height: 550px;
-    margin-top: 1.7em;
-    opacity: 70%;
-    /*border-radius: 0 15px 20px 0;*/
-    border-left: 2px solid var(--blood-orange);
-
-}
-
 
 .flex-wrapper-job-description p {
     width: 600px;
@@ -129,66 +124,155 @@ section {
 
 }
 
-
-
-
-
 /* SECTION 3 REQUIREMENTS */
+.flex-wrapper-important {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.blob {
+    width: 1000px;
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;utf8, %3Csvg width=%22100%25%22 height=%22100%25%22 viewBox=%220 0 1000 1000%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22 %3E %3Cdefs%3E %3Cpattern id=%22pattern%22 patternUnits=%22userSpaceOnUse%22 width=%2225%22 height=%2225%22 viewBox=%220 0 100 100%22 fill=%22%23efefef%22 %3E %3Ccircle cx=%2250%22 cy=%2250%22 r=%2212.5%22 %2F%3E %3C%2Fpattern%3E %3CclipPath id=%22shape%22%3E %3Cpath fill=%22currentColor%22 d=%22M754%2C588.5Q641%2C677%2C527.5%2C776.5Q414%2C876%2C300%2C763.5Q186%2C651%2C245.5%2C528.5Q305%2C406%2C356.5%2C251Q408%2C96%2C548.5%2C179.5Q689%2C263%2C778%2C381.5Q867%2C500%2C754%2C588.5Z%22%3E%3C%2Fpath%3E %3C%2FclipPath%3E %3C%2Fdefs%3E %3Cg clip-path=%22url(%23shape)%22%3E %3Cpath fill=%22url(%23pattern)%22 d=%22M754%2C588.5Q641%2C677%2C527.5%2C776.5Q414%2C876%2C300%2C763.5Q186%2C651%2C245.5%2C528.5Q305%2C406%2C356.5%2C251Q408%2C96%2C548.5%2C179.5Q689%2C263%2C778%2C381.5Q867%2C500%2C754%2C588.5Z%22 %2F%3E %3C%2Fg%3E %3C%2Fsvg%3E");
+    position: absolute;
+}
+
+
 .flex-wrapper-important li span {
     color: black;
+
 }
 
 .flex-wrapper-important li {
-    font-size: 1em;
-    margin: 10px;
-    width: 330px;
+    font-size: 1.5em;
+    margin: 30px;
     list-style: disc;
     color: var(--blood-orange);
+    width: 450px;
+    z-index: 2;
+    position: relative;
+
 }
 
-/* SECTION 3 PERKS AT VERVE*/
-.flex-wrapper-perks{
-    width: 600px;
+.flex-wrapper-important ul {
+    margin-top: 4em;
+    margin-left: 5em;
+    z-index: 2;
+    position: relative;
 }
+
+
+/* SECTION 3 PERKS AT VERVE*/
+.flex-wrapper-perks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.flex-wrapper-perks div {
+    outline: solid 2px var(--blood-orange);
+    border-radius: 10px;
+    width: 300px;
+    height: 350px;
+    margin-top: 5em;
+    margin-right: 5em;
+}
+
+.flex-wrapper-perks h3 {
+    text-align: center;
+}
+
+.flex-wrapper-perks p {
+    text-align: center;
+    width: 280px;
+    margin-left: 0.5em;
+}
+
 
 /* SECTION 4 APPLY NOW */
 .flex-wrapper-apply {
+    display: flex;
+    flex-direction: row;
     width: 600px;
 }
 
+.flex-wrapper-apply button {
+    background-color: var(--blood-orange);
+    width: 8em;
+    height: 3em;
+    border-radius: 10px;
+    color: white;
+    font-size: 1em;
+    border: none;
+    position: absolute;
+    margin-top: 1em;
+    left: 60%;
+    z-index: 12;
+}
+
+#apply img {
+    width: 1200px;
+    margin-top: 2em;
+}
+
 /* SLIDE IN ANIMATIONS */
+
 /* BOVEN NAAR ONDER*/
-.reveal{
+.reveal {
     position: relative;
     transform: translateY(150px);
     opacity: 0;
     transition: 2s all ease;
 }
-.reveal.active{
+
+.reveal.active {
     transform: translateY(0);
     opacity: 1;
 }
 
+
 /* RECHTS NAAR LINKS */
-.reveal2{
+.reveal2 {
     position: relative;
     transform: translateX(150px);
     opacity: 0;
     transition: 2s all ease;
 }
-.reveal2.active{
+
+.reveal2.active {
     transform: translateX(0);
     opacity: 1;
 }
 
 /* LINKS NAAR RECHTS */
-.reveal3{
+.reveal3 {
     position: relative;
     transform: translateX(-150px);
     opacity: 0;
     transition: 2s all ease;
 }
-.reveal3.active{
+
+.reveal3.active {
     transform: translateX(0);
     opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
