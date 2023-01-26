@@ -100,7 +100,7 @@ body {
 /* JENGA TOWER*/
 #section-jenga-tower{
     margin-bottom: 20rem;
-    background-color: var(--beige);
+    background-color: var(--grey);
 }
 
 #tridiv {
@@ -267,7 +267,7 @@ body {
 
 .cub-1 .face {
     background-color: white;
-    opacity: 90%;
+    
 
 }
 
@@ -300,7 +300,7 @@ body {
 
 .cub-2 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-3 styles */
@@ -332,7 +332,7 @@ body {
 
 .cub-3 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-4 styles */
@@ -382,7 +382,7 @@ body {
 
 .cub-4 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-5 styles */
@@ -414,7 +414,7 @@ body {
 
 .cub-5 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-6 styles */
@@ -446,7 +446,7 @@ body {
 
 .cub-6 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-7 styles */
@@ -493,7 +493,7 @@ body {
 
 .cub-7 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-8 styles */
@@ -525,7 +525,7 @@ body {
 
 .cub-8 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-9 styles */
@@ -557,7 +557,7 @@ body {
 
 .cub-9 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-10 styles */
@@ -606,7 +606,7 @@ body {
 
 .cub-10 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-11 styles */
@@ -638,7 +638,7 @@ body {
 
 .cub-11 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-12 styles */
@@ -670,7 +670,7 @@ body {
 
 .cub-12 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-13 styles */
@@ -719,7 +719,7 @@ body {
 
 .cub-13 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-14 styles */
@@ -751,7 +751,7 @@ body {
 
 .cub-14 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-15 styles */
@@ -783,7 +783,7 @@ body {
 
 .cub-15 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-16 styles */
@@ -832,7 +832,7 @@ body {
 
 .cub-16 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-17 styles */
@@ -864,7 +864,7 @@ body {
 
 .cub-17 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-18 styles */
@@ -896,7 +896,7 @@ body {
 
 .cub-18 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-19 styles */
@@ -943,7 +943,7 @@ body {
 
 .cub-19 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 
@@ -976,7 +976,7 @@ body {
 
 .cub-20 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 /* .cub-21 styles */
@@ -1008,7 +1008,7 @@ body {
 
 .cub-21 .face {
     background-color: white;
-    opacity: 90%;
+
 }
 
 .photon-shader a {
